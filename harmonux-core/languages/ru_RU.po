@@ -1,0 +1,1082 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: HarmonUX Core v1.0.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-09-04 09:39:13+0000\n"
+"Last-Translator: admin <dyba03@yandex.ua>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:11
+#@ harmonux
+msgid "Apologies, but no results were found. Perhaps searching will help find a related post."
+msgstr "Пожалуйста, воспользуйтесь поиском."
+
+#: archive.php:18
+#, php-format
+#@ harmonux
+msgid "Daily Archives: %s"
+msgstr "День: %s"
+
+#: archive.php:19
+#, php-format
+#@ harmonux
+msgid "Monthly Archives: %s"
+msgstr "Месяц: %s"
+
+#: archive.php:19
+#: smart-lib/project/class-project-layout.php:251
+#@ harmonux
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: archive.php:21
+#, php-format
+#@ harmonux
+msgid "Yearly Archives: %s"
+msgstr "Год: %s"
+
+#: archive.php:21
+#: smart-lib/project/class-project-layout.php:254
+#@ harmonux
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: archive.php:23
+#@ harmonux
+msgid "Archives"
+msgstr "Архив: %s"
+
+#: author.php:19
+#, php-format
+#@ harmonux
+msgid "Author Archives: %s"
+msgstr "Автор: %s"
+
+#: author.php:39
+#: author.php:46
+#: views/snippets/author_info.php:12
+#: views/snippets/author_info.php:19
+#, php-format
+#@ harmonux
+#@ smartlib
+msgid "About %s"
+msgstr "Про: %s"
+
+#: category.php:15
+#, php-format
+#@ harmonux
+msgid "Category Archives: %s"
+msgstr "Рубрики: %s"
+
+#: comments.php:18
+#, php-format
+#@ harmonux
+msgid "1 comment"
+msgid_plural "%1$s comments"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: comments.php:29
+#@ harmonux
+msgid "Comment navigation"
+msgstr "Навигация по комментариям"
+
+#: comments.php:31
+#@ harmonux
+msgid "&larr; Older Comments"
+msgstr "&larr; Предыдущие комментарии"
+
+#: comments.php:32
+#@ harmonux
+msgid "Newer Comments &rarr;"
+msgstr "Новые комментарии &rarr;"
+
+#: comments.php:41
+#@ harmonux
+msgid "Comments are closed."
+msgstr "Комментарии закрыты"
+
+#: functions.php:65
+#@ harmonux
+msgid "Top Menu"
+msgstr "Верхнее меню"
+
+#: functions.php:66
+#@ harmonux
+msgid "Bottom Menu"
+msgstr "Нижнее меню"
+
+#: functions.php:163
+#: smart-lib/class-tgm-plugin-activation.php:196
+#@ harmonux
+#@ tgmpa
+msgid "Install Required Plugins"
+msgstr ""
+
+#: functions.php:164
+#: smart-lib/class-tgm-plugin-activation.php:197
+#@ harmonux
+#@ tgmpa
+msgid "Install Plugins"
+msgstr ""
+
+#: functions.php:165
+#: smart-lib/class-tgm-plugin-activation.php:198
+#, php-format
+#@ harmonux
+#@ tgmpa
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: functions.php:166
+#@ harmonux
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: functions.php:167
+#: smart-lib/class-tgm-plugin-activation.php:200
+#, php-format
+#@ harmonux
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: functions.php:168
+#: smart-lib/class-tgm-plugin-activation.php:201
+#, php-format
+#@ harmonux
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: functions.php:169
+#: smart-lib/class-tgm-plugin-activation.php:202
+#, php-format
+#@ harmonux
+msgid "Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed."
+msgid_plural "Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: functions.php:170
+#: smart-lib/class-tgm-plugin-activation.php:203
+#, php-format
+#@ harmonux
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: functions.php:171
+#: smart-lib/class-tgm-plugin-activation.php:204
+#, php-format
+#@ harmonux
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: functions.php:172
+#: smart-lib/class-tgm-plugin-activation.php:205
+#, php-format
+#@ harmonux
+msgid "Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated."
+msgid_plural "Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: functions.php:173
+#: smart-lib/class-tgm-plugin-activation.php:206
+#, php-format
+#@ harmonux
+msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
+msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: functions.php:174
+#: smart-lib/class-tgm-plugin-activation.php:207
+#, php-format
+#@ harmonux
+msgid "Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated."
+msgid_plural "Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: functions.php:175
+#: smart-lib/class-tgm-plugin-activation.php:208
+#@ harmonux
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: functions.php:176
+#: smart-lib/class-tgm-plugin-activation.php:209
+#@ harmonux
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: functions.php:177
+#: smart-lib/class-tgm-plugin-activation.php:210
+#@ harmonux
+#@ tgmpa
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: functions.php:178
+#: smart-lib/class-tgm-plugin-activation.php:212
+#: smart-lib/class-tgm-plugin-activation.php:1951
+#@ harmonux
+#@ tgmpa
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: functions.php:179
+#, php-format
+#@ harmonux
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: header.php:48
+#: section-menu.php:5
+#@ harmonux
+msgid "Skip to content"
+msgstr "Перейти к содержанию"
+
+#: image.php:18
+#, php-format
+#@ harmonux
+msgid "<span class=\"meta-prep meta-prep-entry-date\"></span> <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</a>."
+msgstr "<span class=\"meta-prep meta-prep-entry-date\"></span> <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> - <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> - <a href=\"%6$s\" title=\"%7$s\" rel=\"gallery\">%8$s</a>."
+
+#: image.php:29
+#: smart-lib/project/class-project-layout.php:558
+#@ harmonux
+msgid "Edit"
+msgstr "Изменить"
+
+#: image.php:35
+#@ harmonux
+msgid "&larr; Previous"
+msgstr "&larr; Назад"
+
+#: image.php:36
+#@ harmonux
+msgid "Next &rarr;"
+msgstr "Вперед &rarr;"
+
+#: image.php:91
+#: smart-lib/project/class-project-layout.php:438
+#@ harmonux
+msgid "Pages:"
+msgstr "Страницы:"
+
+#: search.php:13
+#, php-format
+#@ harmonux
+msgid "Search Results for: %s"
+msgstr "Результаты поиска:"
+
+#: search.php:29
+#@ harmonux
+msgid "Nothing Found"
+msgstr "Ничего не найдено"
+
+#: search.php:33
+#@ harmonux
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "К сожалению, ничего не найдено."
+
+#: searchform.php:3
+#: searchform.php:4
+#: smart-lib/template-tags.php:244
+#@ harmonux
+msgid "Search"
+msgstr "Поиск"
+
+#: smart-lib/class-tgm-plugin-activation.php:199
+#@ tgmpa
+msgid "Something went wrong."
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:211
+#@ tgmpa
+msgid "Return to the dashboard"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:214
+#, php-format
+#@ tgmpa
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:215
+#@ tgmpa
+msgid "Dismiss this notice"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:544
+#: smart-lib/class-tgm-plugin-activation.php:2168
+#@ tgmpa
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1174
+#@ tgmpa
+msgid "Private Repository"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1177
+#@ tgmpa
+msgid "Pre-Packaged"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1182
+#@ tgmpa
+msgid "WordPress Repository"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1185
+#@ tgmpa
+msgid "Required"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1185
+#@ tgmpa
+msgid "Recommended"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1188
+#@ tgmpa
+msgid "Not Installed"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1190
+#@ tgmpa
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1290
+#: smart-lib/class-tgm-plugin-activation.php:1398
+#@ tgmpa
+msgid "Install"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1312
+#: smart-lib/class-tgm-plugin-activation.php:1399
+#@ tgmpa
+msgid "Activate"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1361
+#, php-format
+#@ tgmpa
+msgid "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1377
+#@ tgmpa
+msgid "Plugin"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1378
+#@ tgmpa
+msgid "Source"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1379
+#@ tgmpa
+msgid "Type"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1380
+#@ tgmpa
+msgid "Status"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1508
+#@ tgmpa
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1616
+#@ tgmpa
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#. gettext fix: identical singular and plural forms found, that may be ambiguous! Please check the code!
+#: smart-lib/class-tgm-plugin-activation.php:1638
+#: smart-lib/class-tgm-plugin-activation.php:213
+#@ tgmpa
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1934
+#@ tgmpa
+msgid "Install package not available."
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1935
+#, php-format
+#@ tgmpa
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1936
+#@ tgmpa
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1937
+#@ tgmpa
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1938
+#@ tgmpa
+msgid "Plugin install failed."
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1939
+#@ tgmpa
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:1950
+#@ tgmpa
+msgid "Plugin activation failed."
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:2064
+#@ tgmpa
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:2065
+#, php-format
+#@ tgmpa
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:2065
+#: smart-lib/class-tgm-plugin-activation.php:2074
+#@ tgmpa
+msgid "Show Details"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:2065
+#: smart-lib/class-tgm-plugin-activation.php:2074
+#@ tgmpa
+msgid "Hide Details"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:2066
+#@ tgmpa
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:2067
+#, php-format
+#@ tgmpa
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:2071
+#@ tgmpa
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:2072
+#, php-format
+#@ tgmpa
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:2073
+#, php-format
+#@ tgmpa
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:2074
+#, php-format
+#@ tgmpa
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:2075
+#@ tgmpa
+msgid "All installations have been completed."
+msgstr ""
+
+#: smart-lib/class-tgm-plugin-activation.php:2076
+#, php-format
+#@ tgmpa
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: smart-lib/core/class-base-utils.php:50
+#, php-format
+#@ harmonux
+msgid "Page %s"
+msgstr "Страница %s"
+
+#: smart-lib/project/class-custom-widgets.php:38
+#@ harmonux
+msgid "A search form for your site"
+msgstr "Форма поиска"
+
+#: smart-lib/project/class-custom-widgets.php:60
+#: smart-lib/project/class-custom-widgets.php:201
+#: smart-lib/project/class-custom-widgets.php:313
+#: smart-lib/project/class-custom-widgets.php:573
+#: smart-lib/project/class-custom-widgets.php:704
+#: smart-lib/project/class-custom-widgets.php:840
+#@ harmonux
+msgid "Title:"
+msgstr "Заголовок:"
+
+#: smart-lib/project/class-custom-widgets.php:89
+#@ harmonux
+msgid "The most recent posts on your site (extended contorls)"
+msgstr "Похожие записи"
+
+#: smart-lib/project/class-custom-widgets.php:117
+#@ harmonux
+msgid "Recent Posts"
+msgstr "Похожие записи"
+
+#: smart-lib/project/class-custom-widgets.php:206
+#@ harmonux
+msgid "Number of posts to show:"
+msgstr "Кол-во постов к показу:"
+
+#: smart-lib/project/class-custom-widgets.php:213
+#@ harmonux
+msgid "Display post date?"
+msgstr "Показывать дату?"
+
+#: smart-lib/project/class-custom-widgets.php:220
+#@ harmonux
+msgid "Display post thumbnail?"
+msgstr "Показывать миниатюру?"
+
+#: smart-lib/project/class-custom-widgets.php:226
+#@ harmonux
+msgid "Display post author?"
+msgstr "Показывать автора?"
+
+#: smart-lib/project/class-custom-widgets.php:244
+#@ harmonux
+msgid "Short  info & avatar"
+msgstr "Короткая информация и аватар"
+
+#: smart-lib/project/class-custom-widgets.php:320
+#@ harmonux
+msgid "Authot Name:"
+msgstr "Имя автора:"
+
+#: smart-lib/project/class-custom-widgets.php:336
+#@ harmonux
+msgid "Avatar Size:"
+msgstr "Размер аватара:"
+
+#: smart-lib/project/class-custom-widgets.php:367
+#@ harmonux
+msgid "Add social profile icons"
+msgstr "Добавить соц.сеть"
+
+#: smart-lib/project/class-custom-widgets.php:433
+#@ harmonux
+msgid "Short Title:"
+msgstr "Короткий заголовок:"
+
+#: smart-lib/project/class-custom-widgets.php:439
+#@ harmonux
+msgid "Facebook:"
+msgstr ""
+
+#: smart-lib/project/class-custom-widgets.php:444
+#@ harmonux
+msgid "Google+:"
+msgstr ""
+
+#: smart-lib/project/class-custom-widgets.php:449
+#@ harmonux
+msgid "Youtube:"
+msgstr ""
+
+#: smart-lib/project/class-custom-widgets.php:454
+#@ harmonux
+msgid "Twitter:"
+msgstr ""
+
+#: smart-lib/project/class-custom-widgets.php:459
+#@ harmonux
+msgid "Pinterest:"
+msgstr ""
+
+#: smart-lib/project/class-custom-widgets.php:463
+#@ harmonux
+msgid "LinkedIn:"
+msgstr ""
+
+#: smart-lib/project/class-custom-widgets.php:490
+#@ harmonux
+msgid "Featured Video Widget"
+msgstr ""
+
+#: smart-lib/project/class-custom-widgets.php:579
+#@ harmonux
+msgid "Embed code:"
+msgstr ""
+
+#: smart-lib/project/class-custom-widgets.php:583
+#@ harmonux
+msgid "More text:"
+msgstr ""
+
+#: smart-lib/project/class-custom-widgets.php:588
+#@ harmonux
+msgid "Link:"
+msgstr ""
+
+#: smart-lib/project/class-custom-widgets.php:614
+#@ harmonux
+msgid "Displays last posts from the video post format"
+msgstr ""
+
+#: smart-lib/project/class-custom-widgets.php:710
+#: smart-lib/project/class-custom-widgets.php:846
+#@ harmonux
+msgid "Limit:"
+msgstr "Лимит:"
+
+#: smart-lib/project/class-custom-widgets.php:734
+#@ smartlib
+msgid "Displays last posts from the gallery post format"
+msgstr ""
+
+#: smart-lib/project/class-project-customizer.php:305
+#@ harmonux
+msgid "Logo"
+msgstr "Лого"
+
+#: smart-lib/project/class-project-customizer.php:310
+#@ harmonux
+msgid "Home Page"
+msgstr "Домашняя страница"
+
+#: smart-lib/project/class-project-customizer.php:315
+#@ harmonux
+msgid "Breadcrumb"
+msgstr "Хлебные крошки"
+
+#: smart-lib/project/class-project-customizer.php:321
+#: smart-lib/project/class-project-customizer.php:361
+#@ harmonux
+msgid "Pagination"
+msgstr "Навигация"
+
+#: smart-lib/project/class-project-customizer.php:329
+#@ harmonux
+msgid "Custom Code"
+msgstr "Свой код"
+
+#: smart-lib/project/class-project-customizer.php:344
+#@ harmonux
+msgid "Footer text"
+msgstr "Текст в футере"
+
+#: smart-lib/project/class-project-customizer.php:366
+#@ harmonux
+msgid "Older posts/Newer posts"
+msgstr "Старые записи/Новые записи"
+
+#: smart-lib/project/class-project-customizer.php:367
+#@ harmonux
+msgid "Paginate links"
+msgstr "Ссылки навигации"
+
+#: smart-lib/project/class-project-customizer.php:381
+#@ harmonux
+msgid "Separator"
+msgstr "Разделитель"
+
+#: smart-lib/project/class-project-customizer.php:398
+#@ harmonux
+msgid "Primary Color"
+msgstr "Главный цвет"
+
+#: smart-lib/project/class-project-customizer.php:414
+#@ harmonux
+msgid "Upload"
+msgstr "Загрузить"
+
+#: smart-lib/project/class-project-customizer.php:429
+#@ harmonux
+msgid "Upload favicon"
+msgstr "Загрузить фавикон"
+
+#: smart-lib/project/class-project-customizer.php:444
+#@ harmonux
+msgid "Home Page Layout:"
+msgstr "Структура главной страницы:"
+
+#: smart-lib/project/class-project-customizer.php:449
+#@ harmonux
+msgid "Blog + Slider"
+msgstr "Блог + слайдер"
+
+#: smart-lib/project/class-project-customizer.php:450
+#@ harmonux
+msgid "Classic Blog"
+msgstr "Классический блог"
+
+#: smart-lib/project/class-project-customizer.php:467
+#@ harmonux
+msgid "Home Page Header:"
+msgstr "Шапка главной страницы:"
+
+#: smart-lib/project/class-project-customizer.php:472
+#@ harmonux
+msgid "Show header"
+msgstr "Показывать шапку"
+
+#: smart-lib/project/class-project-customizer.php:473
+#@ harmonux
+msgid "Hide Header"
+msgstr "Спрятать шапку"
+
+#: smart-lib/project/class-project-customizer.php:490
+#@ harmonux
+msgid "Home Page Slider:"
+msgstr "Слайдер на главной:"
+
+#: smart-lib/project/class-project-customizer.php:495
+#@ harmonux
+msgid "Sticky Post Slider"
+msgstr "Прикрепленные посты слайдера"
+
+#: smart-lib/project/class-project-customizer.php:496
+#@ harmonux
+msgid "External Slider"
+msgstr "Внешность слайдера"
+
+#: smart-lib/project/class-project-customizer.php:509
+#@ harmonux
+msgid "Slider Shortcode"
+msgstr "Шорткод слайдера"
+
+#: smart-lib/project/class-project-customizer.php:529
+#@ harmonux
+msgid "Layout"
+msgstr "Структура"
+
+#: smart-lib/project/class-project-customizer.php:543
+#@ harmonux
+msgid "Layout variants:"
+msgstr "Варианты структуры:"
+
+#: smart-lib/project/class-project-customizer.php:548
+#@ harmonux
+msgid "Left sidebar"
+msgstr "Сайдбар слева"
+
+#: smart-lib/project/class-project-customizer.php:549
+#@ harmonux
+msgid "Without sidebar"
+msgstr "Без сайдбара"
+
+#: smart-lib/project/class-project-customizer.php:574
+#@ harmonux
+msgid "Resize components"
+msgstr "Перемасштабировать компоненты"
+
+#: smart-lib/project/class-project-customizer.php:588
+#@ harmonux
+msgid "Layout Width "
+msgstr "Ширина: "
+
+#: smart-lib/project/class-project-customizer.php:598
+#@ harmonux
+msgid "Typography options"
+msgstr "Опции шрифтов"
+
+#: smart-lib/project/class-project-customizer.php:609
+#@ harmonux
+msgid "Primary font"
+msgstr "Главный шрифт"
+
+#: smart-lib/project/class-project-customizer.php:624
+#@ harmonux
+msgid "Top headers font"
+msgstr "Шрифт в шапке"
+
+#: smart-lib/project/class-project-customizer.php:699
+#@ harmonux
+msgid "Top Bar Outer Color"
+msgstr "Цвет шрифта в меню"
+
+#: smart-lib/project/class-project-customizer.php:712
+#@ harmonux
+msgid "Top Bar Menu Color"
+msgstr "Цвет меню"
+
+#: smart-lib/project/class-project-customizer.php:726
+#@ harmonux
+msgid "Top Bar Menu Link Color"
+msgstr "Цвет ссылок в меню"
+
+#: smart-lib/project/class-project-customizer.php:739
+#@ harmonux
+msgid "Top Bar Menu Link Background"
+msgstr "Цвет фона ссылок меню"
+
+#: smart-lib/project/class-project-customizer.php:752
+#@ harmonux
+msgid "Sidebar Width"
+msgstr "Ширина сайдбара"
+
+#: smart-lib/project/class-project-customizer.php:766
+#@ harmonux
+msgid "Top menu font"
+msgstr "Шрифт второго меню"
+
+#: smart-lib/project/class-project-customizer.php:788
+#@ harmonux
+msgid "Custom Scripts for Header [header.php]"
+msgstr "Свои скрипты в шапке [header.php]"
+
+#: smart-lib/project/class-project-customizer.php:796
+#@ harmonux
+msgid "Custom Scripts for Footer [footer.php]"
+msgstr "Свои скрипты в футере [footer.php]"
+
+#: smart-lib/project/class-project-customizer.php:975
+#@ harmonux
+msgid "Available in pro version &#187;"
+msgstr ""
+
+#: smart-lib/project/class-project-layout.php:248
+#: smart-lib/project/class-project-layout.php:251
+#: smart-lib/project/class-project-layout.php:254
+#, php-format
+#@ harmonux
+msgid "%s"
+msgstr ""
+
+#: smart-lib/project/class-project-layout.php:257
+#@ harmonux
+msgid "Blog Archives"
+msgstr "Архив"
+
+#: smart-lib/project/class-project-layout.php:319
+#@ harmonux
+msgid " "
+msgstr ""
+
+#: smart-lib/project/class-project-layout.php:357
+#: smart-lib/project/class-project-layout.php:419
+#@ harmonux
+msgid "Post navigation"
+msgstr "Навигация по записям"
+
+#: smart-lib/project/class-project-layout.php:363
+#@ harmonux
+msgid "&larr; Older posts"
+msgstr "&larr; Предыдущие записи"
+
+#: smart-lib/project/class-project-layout.php:364
+#@ harmonux
+msgid "Newer posts &rarr;"
+msgstr "Новые записи &rarr;"
+
+#: smart-lib/project/class-project-layout.php:421
+#@ harmonux
+msgctxt "Previous post link"
+msgid "&larr; Previous post link"
+msgstr "&larr; Назад"
+
+#: smart-lib/project/class-project-layout.php:422
+#@ harmonux
+msgctxt "Next post link"
+msgid "Next post link &rarr;"
+msgstr "Вперед &rarr;"
+
+#: smart-lib/project/class-project-layout.php:443
+#@ harmonux
+msgid "Next page"
+msgstr "Следующая страница"
+
+#: smart-lib/project/class-project-layout.php:444
+#@ harmonux
+msgid "Previous page"
+msgstr "Предыдущая страница"
+
+#: smart-lib/project/class-project-layout.php:517
+#@ harmonux
+msgid "Pingback:"
+msgstr "Пингбек:"
+
+#: smart-lib/project/class-project-layout.php:517
+#@ harmonux
+msgid "(Edit)"
+msgstr "Изменить"
+
+#: smart-lib/project/class-project-layout.php:540
+#@ harmonux
+msgid "Post author"
+msgstr "Автор записи"
+
+#. translators: 1: date, 2: time
+#: smart-lib/project/class-project-layout.php:546
+#, php-format
+#@ harmonux
+msgid "%1$s at %2$s"
+msgstr "%1$s в %2$s"
+
+#: smart-lib/project/class-project-layout.php:553
+#@ harmonux
+msgid "Your comment is awaiting moderation."
+msgstr "Комментарий ожидает проверки"
+
+#: smart-lib/project/class-project-layout.php:563
+#@ harmonux
+msgid "Reply"
+msgstr "Ответить"
+
+#: smart-lib/project/class-project-layout.php:751
+#@ harmonux
+msgid "To view this protected post, enter the password below:"
+msgstr "Запаролено:"
+
+#: smart-lib/project/class-project-layout.php:751
+#@ harmonux
+msgid "Password:"
+msgstr "Пароль:"
+
+#: smart-lib/project/class-project-layout.php:751
+#@ harmonux
+msgid "Submit"
+msgstr "Отправить"
+
+#: smart-lib/template-tags.php:242
+#@ harmonux
+msgid "Search for ..."
+msgstr "Искать..."
+
+#: smart-lib/template-tags.php:279
+#@ harmonux
+msgid "- Select -"
+msgstr "Выбрать"
+
+#: smart-lib/template-tags.php:297
+#@ harmonux
+msgid "Menu Not Found"
+msgstr "Меню не найдено"
+
+#: smart-lib/template-tags.php:365
+#@ harmonux
+msgid "Related posts"
+msgstr "Похожие записи"
+
+#: smart-lib/template-tags.php:386
+#: views/content-featured.php:14
+#: views/content-loop-2columns.php:16
+#: views/content-loop-2columns.php:31
+#: views/content-loop.php:13
+#: views/content.php:29
+#: views/snippets/sticky-slider.php:47
+#, php-format
+#@ harmonux
+msgid "Permalink to %s"
+msgstr "%s"
+
+#: smart-lib/template-tags.php:480
+#: smart-lib/template-tags.php:523
+#@ harmonux
+msgid "Comment"
+msgstr "Комментировать"
+
+#: smart-lib/template-tags.php:480
+#: smart-lib/template-tags.php:523
+#@ harmonux
+msgid "1 Reply"
+msgstr "Один комментарий"
+
+#: smart-lib/template-tags.php:480
+#: smart-lib/template-tags.php:523
+#@ harmonux
+msgid "% Replies"
+msgstr "Комментариев: %"
+
+#: smart-lib/template-tags.php:501
+#@ harmonux
+msgid "Published by: "
+msgstr "Автор: "
+
+#: smart-lib/template-tags.php:511
+#@ harmonux
+msgid "Tags: "
+msgstr "Метки: "
+
+#: tag.php:16
+#, php-format
+#@ harmonux
+msgid "Tag Archives: %s"
+msgstr "Метки: %s"
+
+#: views/content-loop-2columns.php:43
+#: views/content-loop.php:45
+#: views/content.php:45
+#@ harmonux
+msgid "Continue reading"
+msgstr "Читать далее"
+
+#: views/content.php:15
+#@ harmonux
+msgid "Read more"
+msgstr "Читать далее"
+
+#: views/snippets/author_info.php:29
+#, php-format
+#@ smartlib
+msgid "View all posts by %s <span class=\"icon-chevron-sign-right\"></span>"
+msgstr ""
+
