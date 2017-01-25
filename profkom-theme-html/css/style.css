@@ -1,0 +1,101 @@
+body {
+  background-color: #3d7992;
+}
+.col-md-4, .col-md-6, .col-md-8, .col-md-12 {
+  padding: 0px;
+}
+
+.row {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+/*Шапка*/
+.logo {
+  color: white;
+}
+
+.search {
+  background-color: white;
+  box-shadow: 0 0 15px #333333;
+  margin-top: 20px;
+}
+
+/*Index*/
+.navigation {
+  width: 100%;
+  padding: 2px;
+  text-align: center;
+  color: #3d7992;
+  background-color: white;
+  box-shadow: 0 0 15px #333333;
+}
+.nav-title {
+  height: 51px;
+  text-align: center;
+}
+.button1, .button2, .button3, .button4 {
+  margin-left: -2px;
+}
+.button1, .button4 {
+  background-color: #d6e8ef;
+}
+.button2, .button3 {
+  background-color: #edf3f5;
+}
+.news-item {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  box-shadow: 0 0 15px #333333;
+}
+.news-title {
+  width: 100%;
+  padding: 5px;
+  background-color: white;
+}
+.news-date {
+  padding-left: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+}
+.more {
+  background-color: white;
+  color: #578ba1;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width:200px;
+  padding: 5px;
+  box-shadow: 0 0 15px #333333;
+}
+.footer {
+  background-color: #072c3c;
+  color: white;
+  padding-bottom: 10px;
+}
+/*Page*/
+.content {
+  background-color: white;
+  box-shadow: 0 0 15px #333333;
+}
+.content-header {
+  padding-top: 1px;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+.content-date {
+  text-align: right;
+  padding-right: 20px;
+}
+.content-text {
+  padding: 15px;
+}
