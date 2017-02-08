@@ -16,3 +16,7 @@ register_nav_menu('menu1', '1');
 register_nav_menu('menu2', '2');
 register_nav_menu('menu3', '3');
 register_nav_menu('menu4', '4');
+
+//Поддержка картинок-превью
+add_theme_support('post-thumbnails');
+set_post_thumbnail_size('360','9999', true);

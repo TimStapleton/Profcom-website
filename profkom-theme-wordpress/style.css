@@ -149,21 +149,30 @@ span.text-blue {
   margin-bottom: 0;
 }
 
-.fig{
-  text-align: center;
+.menu-block-type1{
+  padding-right: 0;
+}
+
+.menu-block-type2{
+  padding-left: 0;
 }
 
 .menu-item {
   background-color: #edf3f5;
-
 }
+
 .menu-item:nth-child(4n), .menu-item:nth-child(4n+1) {
   background-color: #d6e8ef;
 }
+
 .menu-item-icon {
   display: block;
-
 }
+
+.menu-item-icon img{
+  width: 100%;
+}
+
 .menu-item h4 {
   margin-bottom: 2.6rem;
 }
@@ -220,6 +229,10 @@ span.text-blue {
   line-height: 24px;
 
   margin: 0;
+}
+
+.size-post-thumbnail{
+  width: 100%;
 }
 
 /*MORE-BUTTON*/

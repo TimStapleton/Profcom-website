@@ -23,3 +23,17 @@
   <link href="<?php bloginfo('template_url'); ?>/style.css" rel="stylesheet">
 
 </head>
+<body>
+
+  <!-- TOPBAR -->
+  <div class="container topbar">
+
+    <div class="logo"></div>
+
+    <h1 class="title">Profcom<span class="title-description">Профком студентов МФТИ</span></h1>
+
+    <form class="form-inline search">
+      <input type="search" class="form-control" id="exampleInputEmail2" placeholder="Поиск по сайту" name="s"><button type="submit" class="btn btn-default"><img src="<?php bloginfo('template_url'); ?>/images/icons/loupe.svg" alt=""></button>
+    </form>
+
+  </div>
