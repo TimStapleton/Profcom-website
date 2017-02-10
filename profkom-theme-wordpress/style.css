@@ -81,6 +81,9 @@ span.text-blue {
   font-size: 2.4rem;
   font-weight: 400;
 }
+.topbar a, .topbar a:visited, .topbar a:hover, .topbar a:active{
+  color: white;
+}
 
 /*SEARCH*/
 .search {
@@ -272,6 +275,10 @@ footer h3, footer h5 {
   font-weight: 400;
 }
 
+footer a, footer a:hover, footer a:visited, footer a:active{
+  color: white;
+}
+
 /*PAGE*/
 .content {
   background-color: white;
@@ -288,4 +295,9 @@ footer h3, footer h5 {
 }
 .content-text {
   padding: 15px;
+}
+
+/* SEARCH RESULTS*/
+.search-item{
+  
 }

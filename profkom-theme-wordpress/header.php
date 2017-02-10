@@ -28,12 +28,13 @@
   <!-- TOPBAR -->
   <div class="container topbar">
 
-    <div class="logo"></div>
+    <a href="<?php bloginfo("home"); ?>"><div class="logo"></div></a>
 
-    <h1 class="title">Profcom<span class="title-description">Профком студентов МФТИ</span></h1>
+    <a href="<?php bloginfo("home"); ?>"><h1 class="title">Profcom<span class="title-description">Профком студентов МФТИ</span></h1></a>
 
     <form class="form-inline search">
-      <input type="search" class="form-control" id="exampleInputEmail2" placeholder="Поиск по сайту" name="s"><button type="submit" class="btn btn-default"><img src="<?php bloginfo('template_url'); ?>/images/icons/loupe.svg" alt=""></button>
+      <input type="search" class="form-control" id="searchInput" placeholder="Поиск по сайту" name="s" value="<?php if(!empty($_GET['s'])){echo $_GET['s'];}?>">
+      <button type="submit" class="btn btn-default"><img src="<?php bloginfo('template_url'); ?>/images/icons/loupe.svg" alt=""></button>
     </form>
 
   </div>

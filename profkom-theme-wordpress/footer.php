@@ -15,7 +15,7 @@
 
       <div class="col-md-4">
         <h3>Контакты</h3>
-        <h5><span class="text-blue">E-mail:</span> profcom@mail.ru</h5>
+        <h5><span class="text-blue">E-mail:</span> <a href="mailto:profcom@mail.ru">profcom@mail.ru</a></h5>
         <h5><span class="text-blue">Телефон:</span> +7 (012) 345-67-89</h5>
       </div>
 
