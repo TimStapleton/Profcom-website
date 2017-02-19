@@ -1,26 +1,33 @@
 <?php get_header() ?>
 
-  <div class="container">
-    <div class="row">
-      <div class="content">
-        <div class="content-header">
-          <h3><font color="3d7992">Результаты поиска</font></h3>
-        </div>
-        <h1>Поиск по: "<?php echo $_GET['s'];?>"</h1>
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-          <div class="row">
-            <div class="col-md-"></div>
-          </div>
-          <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
-          <?php the_content(''); ?>
-          <?php endwhile; else: ?>
-          <p>Поиск не дал результатов.</p>
-        <?php endif;?>
-      </div>
+  <div class="search-title">
+    <div class="search-text">
+      Результаты поиска по <span class="search-phrase">"<?php echo $_GET['s'];?>"</span>
     </div>
   </div>
+  <div class="container">
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+      <div class="row search-item">
+        <a href="<?php the_permalink();?>">
+        <div class="col-md-1 search-item-img">
+          <div class="search-item-label"></div>
+          <?php the_post_thumbnail(); ?>
+        </div>
+        <div class="col-md-8 search-item-info">
+          <?php the_title(); ?></a>
+          <?php the_content(''); ?>
+        </div>
+        <div class="col-md-3 search-item-date">
+          <?php the_date('j F Y', '<p>', '</p>'); ?>
+        </div>
+        </a>
+      </div>
+      <?php endwhile; else: ?>
+      <p>Поиск не дал результатов.</p>
+    <?php endif;?>
+  </div>
   <!-- BACK -->
-  <a href="<?php bloginfo("home"); ?>"><button class="more">Назад к публикациям</button></a>
+  <button class="more" onclick="location.href = '<?php bloginfo("home"); ?>'">Назад к главной</button>
 
 
 

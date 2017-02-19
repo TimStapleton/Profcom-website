@@ -16,7 +16,7 @@
       </div>
     </div>
   <!-- BACK -->
-  <a href="<?php bloginfo("home"); ?>"><button class="more">Назад к публикациям</button></a>
+  <button class="more" onclick="location.href = '<?php bloginfo("home"); ?>'">Назад к публикациям</button>
 
 
 
