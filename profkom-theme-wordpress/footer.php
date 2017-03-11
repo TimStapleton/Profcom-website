@@ -11,6 +11,10 @@
 
       <div class="col-md-4">
         <h3>Мы в соц. сетях</h3>
+        <a href="https://vk.com/profkom_phystech"><img src="<?php bloginfo('template_url'); ?>/images/Icon-vk-white.svg" width="54px"></a>
+        <!--<a href="https://vk.com/profkom_phystech"><img src="<?php bloginfo('template_url'); ?>/images/Icon-facebook-white.svg" width="54px"></a>-->
+        <a href="https://www.instagram.com/mipt_profkom/"><img src="<?php bloginfo('template_url'); ?>/images/Icon-instagram-white.svg" width="54px"></a>
+        <!--<a href="https://vk.com/profkom_phystech"><img src="<?php bloginfo('template_url'); ?>/images/Icon-telegram-white.svg" width="54px"></a>-->
       </div>
 
       <div class="col-md-4">

@@ -13,11 +13,11 @@
           <div class="search-item-label"></div>
           <?php the_post_thumbnail(); ?>
         </div>
-        <div class="col-md-8 search-item-info">
+        <div class="col-md-9 search-item-info">
           <?php the_title(); ?></a>
           <?php the_content(''); ?>
         </div>
-        <div class="col-md-3 search-item-date">
+        <div class="col-md-2 search-item-date">
           <?php the_date('j F Y', '<p>', '</p>'); ?>
         </div>
         </a>

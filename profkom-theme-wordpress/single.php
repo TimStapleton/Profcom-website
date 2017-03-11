@@ -10,7 +10,8 @@
           <h5><font color="3d7992"><?php the_time('j M Y'); ?></font></h5>
         </div>
         <div class="content-text">
-          <p><font color="5f5f5f"><?php the_content(); ?></p>
+          <?php the_post(); ?>
+          <p><font color="5f5f5f"><?php the_content( $more_link_text = null, $strip_teaser = false) ?></p>
           </div>
         </div>
       </div>
