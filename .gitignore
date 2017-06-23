@@ -6,7 +6,7 @@ ehthumbs.db
 Desktop.ini
 
 # Sass cache
-./profkom-theme-html/.sass-cache/
+.sass-cache/
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
