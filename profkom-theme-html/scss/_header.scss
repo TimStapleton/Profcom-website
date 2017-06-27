@@ -1,14 +1,17 @@
 @import "variables";
+@import "typography";
 
 //Header styling
 header {
   display: flex;
+  position: relative;
+  height: auto;
   flex-flow: column nowrap;
 
   .cover {
     width: 100vw;
-    height: auto;
-    padding: 4.4rem;
+    height: 100%;
+    padding: 4.4rem 2rem;
 
     background: url('../images/cover-bg.jpg');
     background-size: cover;
@@ -25,24 +28,19 @@ header {
 
       z-index: 1;
     }
-
-    &.publication {
-      height: 80vh;
-
-      background-image: url('../images/post-bg.png');
-    }
   }
 
   .head {
     text-align: center;
 
-    h1.title {
+    .title {
+      @extend .header-bold;
       margin-top: 2.4rem;
       color: white;
       text-transform: uppercase;
     }
 
-    p.intro {
+    .intro {
     max-width: 62rem;
     position: relative;
     margin: 0 auto;

@@ -1,11 +1,5 @@
 //Variables
 
-//$font-face-serif:   'Garamond', Times, "Times New Roman", serif;
-//$font-face-sans:    'Avenir Next', Helvetica, sans-serif;
-$font-face-headers: 'Rubik', sans-serif;
-$font-face-text:    'Avenir Next', Helvetica, sans-serif;
-
-
 $border-radius-default: 0.4rem;
 
 //Colors
@@ -21,8 +15,8 @@ $gray-transparent: rgba(0,0,0, 0.1);
 $menu-height: 4.4rem;
 
 //Grid
-$browser-small:   "(min-width:  610px)";
-$browser-medium:  "(min-width:  990px)"; /* styles for browsers larger than 960px; */
+$browser-small:   "(min-width:  700px)";
+$browser-medium:  "(min-width: 1040px)"; /* styles for browsers larger than 960px; */
 $browser-large:   "(min-width: 1440px)"; /* styles for browsers larger than 1440px; */
 $browser-xlarge:  "(min-width: 2000px)"; /* for sumo sized (mac) screens */
 

@@ -1,4 +1,5 @@
 @import "variables";
+@import "typography";
 
 //Posts styling
 .posts {
@@ -90,6 +91,7 @@
       border-radius: $border-radius-default;
 
       .post-title {
+        @extend .header-bold;
         color: white;
         text-shadow: 0 1px 3px rgba(0,0,0, 0.3);
         transform: translateZ(0);
@@ -103,7 +105,6 @@
         z-index: 3;
         transform: translate(-50%, 0) translateZ(0);
 
-        font-family: $font-face-text;
         font-weight: 700;
         color: white;
         opacity: 1;
@@ -125,7 +126,7 @@
 
         transition: bottom 0.2s ease;
 
-        p {
+        h5 {
           display: flex;
           flex-flow: row nowrap;
           justify-content: center;
@@ -160,7 +161,7 @@
   margin: 2.4rem auto 0;
   padding: 0 2rem;
 
-  font-family: $font-face-headers;
+  font-family: $font-face-normal;
   background-color: $blue;
   color: white;
 

@@ -74,7 +74,7 @@ gulp.task('connect', function() {
 
 
 //Watch
-gulp.task('watch', function(){
+gulp.task('watch', ['build'], function(){
   gulp.watch('./scss/*.scss', ['scss']);
   gulp.watch('./css/*.css', ['styles']);
   gulp.watch('./js/*.js', ['scripts']);
@@ -86,4 +86,4 @@ gulp.task('watch', function(){
 gulp.task('build', ['html', 'scss', 'styles', 'scripts', 'images']);
 
 //Default
-gulp.task('default', ['connect',  'watch']);
+gulp.task('default', ['connect', 'build', 'watch']);

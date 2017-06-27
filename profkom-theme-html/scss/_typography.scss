@@ -1,0 +1,85 @@
+@import "variables";
+
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Open+Sans:400,500&subset=cyrillic');
+
+$font-face-bold:   'Roboto Slab', Helvetica, Arial, sans-serif;
+$font-face-normal: 'Open Sans', Helvetica, Arial, sans-serif;
+
+html{
+  font-size: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, a, p {
+  box-sizing: border-box;
+  margin: 0;
+
+  font-family: $font-face-normal;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+a, p {
+  color: $gray-light;
+  letter-spacing: 0.01em;
+}
+
+.header-bold {
+  font-family: $font-face-bold;
+  font-weight: 700;
+}
+
+//Less-than-610px
+h1 {font-size: 3.6rem;}
+h2 {font-size: 3.0rem;}
+h3 {font-size: 2.6rem;}
+h4 {font-size: 2.0rem;}
+h5 {font-size: 1.6rem;}
+h6 {font-size: 1.4rem;}
+a  {font-size: 1.8rem;}
+p  {font-size: 1.8rem;}
+
+@include grid-media($grid-browser-small) {
+  h1 {font-size: 3.6rem;}
+  h2 {font-size: 2.6rem;}
+  h3 {font-size: 2.2rem;}
+  h4 {font-size: 2.0rem;}
+  h5 {font-size: 1.4rem;}
+  h6 {font-size: 1.2rem;}
+  a  {font-size: 2.0rem;}
+  p  {font-size: 2.0rem;}
+};
+
+@include grid-media($grid-browser-medium) {
+  h1 {font-size: 3.6rem;}
+  h2 {font-size: 2.6rem;}
+  h3 {font-size: 2.2rem;}
+  h4 {font-size: 2.0rem;}
+  h5 {font-size: 1.4rem;}
+  h6 {font-size: 1.2rem;}
+  a  {font-size: 2.0rem;}
+  p  {font-size: 2.0rem;}
+};
+
+@include grid-media($grid-browser-large) {
+  h1 {font-size: 4.0rem;}
+  h2 {font-size: 3.0rem;}
+  h3 {font-size: 2.2rem;}
+  h4 {font-size: 2.0rem;}
+  h5 {font-size: 1.4rem;}
+  h6 {font-size: 1.2rem;}
+  a  {font-size: 1.8rem;}
+  p  {font-size: 1.8rem;}
+};
+
+@include grid-media($grid-browser-xlarge) {
+  h1 {font-size: 3.6rem;}
+  h2 {font-size: 2.6rem;}
+  h3 {font-size: 2.2rem;}
+  h4 {font-size: 2.0rem;}
+  h5 {font-size: 1.4rem;}
+  h6 {font-size: 1.2rem;}
+  a  {font-size: 1.8rem;}
+  p  {font-size: 1.8rem;}
+};

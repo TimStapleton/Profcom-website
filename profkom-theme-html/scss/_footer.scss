@@ -1,4 +1,5 @@
 @import "variables";
+@import "typography";
 
 //Footer styling
 footer {
@@ -21,10 +22,10 @@ footer {
     @include grid-container;
 
     @include grid-media($grid-browser-small){
-      max-width: 720px;
+      max-width: 780px;
     }
     @include grid-media($grid-browser-medium){
-      max-width: 960px;
+      max-width: 1080px;
     }
     @include grid-media($grid-browser-large){
       max-width: 1280px;
@@ -54,6 +55,8 @@ footer {
     }
 
     h3 {
+      @extend .header-bold;
+      color: $gray;
       text-align: center;
       margin: 2.4rem 0 0.8rem;
     }
@@ -84,10 +87,14 @@ footer {
     }
   }
 
+  h5 {
+    color: $gray-light;
+  }
+
   .text-about {
     display: block;
-    margin: 0 auto;
-    max-width: 50rem;
+    margin: 1rem auto 0;
+    max-width: 60rem;
   }
 
   .social-icons-container {
@@ -207,10 +214,9 @@ footer {
 
     text-align: center;
 
-    p {
+    h6 {
+      color: $gray-light;
       line-height: 4rem;
-      font-size: 1.2rem;
-      font-family: $font-face-text;
     }
   }
 }

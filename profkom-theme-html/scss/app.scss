@@ -1,29 +1,30 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
+@import "typography";
 @import "variables";
 @import "menu";
 @import "header";
 @import "posts";
 @import "footer";
+@import "publication";
 
-
-//Fonts
-@import url('https://fonts.googleapis.com/css?family=Rubik:700&subset=cyrillic,cyrillic-ext,latin-ext');
 
 //Basic styling
 html {
-  font-size: 10px;
   padding: 0;
   margin: 0;
+
+  overflow-x: hidden;
 }
 
 body {
+  width: 100vw;
   height: auto;
   padding: 0;
   margin: -1rem 0 0 0;
 
   background: white;
-  font-family: $font-face-text;
+  font-family: $font-face-normal;
   font-weight: 400;
   letter-spacing: 0.02em;
   color: $gray;
@@ -32,25 +33,3 @@ body {
 }
 
 div {display: block; box-sizing: border-box;}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-
-  font-family: $font-face-headers;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-}
-a, p {
-  color: $gray-light;
-  box-sizing: border-box;
-  margin: 0;
-  text-decoration: none;
-}
-h1 {font-size: 3.6rem;}
-h2 {font-size: 3.0rem;}
-h3 {font-size: 2.0rem;}
-h4 {font-size: 1.8rem;}
-h5 {font-size: 1.6rem;}
-h6 {font-size: 1.4rem;}
-a  {font-size: 1.8rem;}
-p  {font-size: 1.4rem;}
