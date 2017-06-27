@@ -1,0 +1,47 @@
+@import "variables";
+
+//Header styling
+header {
+  display: flex;
+  flex-flow: column nowrap;
+
+  .cover {
+    width: 100vw;
+    height: 17rem;
+    padding: 4.4rem;
+
+    background-image: url('../images/bg-1.png');
+    background-size: cover;
+    background-position: center;
+    background-color: $gray-light;
+
+    .logo {
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      width: 8.2rem;
+      height: 8.2rem;
+
+      z-index: 1;
+    }
+
+    &.publication {
+      height: 80vh;
+
+      background-image: url('../images/post-bg.png');
+    }
+  }
+
+  .head {
+    text-align: center;
+
+    h1.title {
+      margin-top: 2.4rem;
+      text-transform: uppercase;
+    }
+
+    p.intro {
+      margin-top: 0.6rem;
+    }
+  }
+}

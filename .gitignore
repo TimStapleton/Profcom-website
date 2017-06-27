@@ -6,7 +6,8 @@ ehthumbs.db
 Desktop.ini
 
 # Sass cache
-.sass-cache/
+**/.sass-cache
+**/node_modules
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/

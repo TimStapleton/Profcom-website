@@ -1,2 +1,2 @@
-var number=3,str="Hello, world";console.log(str);
+$(document).ready(function(){$(".sliding-panel-button,.sliding-panel-fade-screen,.sliding-panel-close").on("click touchstart",function(n){$(".sliding-panel-content,.sliding-panel-fade-screen").toggleClass("is-visible"),n.preventDefault()})});
 var pi=3.1416;console.log("I'm script 2!");

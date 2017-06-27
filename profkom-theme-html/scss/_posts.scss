@@ -1,0 +1,154 @@
+@import "variables";
+
+//Posts styling
+.posts {
+  margin-top: 1.6rem;
+
+  @include grid-container;
+
+  .post {
+    display: block;
+    position: relative;
+    height: auto;
+    z-index: 0;
+    min-height: 26rem;
+    margin-top: 0.8rem;
+    padding: 0;
+
+    overflow: hidden;
+
+    border-radius: $border-radius-default;
+    background-color: $gray;
+    color: white;
+    text-align: center;
+
+    @include grid-column(12);
+
+    @include grid-media($grid-browser-small){
+      @include grid-column(1, $grid-browser-small);
+      margin-top: $browser-small-gutter;
+    }
+    @include grid-media($grid-browser-medium){
+      @include grid-column(1, $grid-browser-medium);
+      margin-top: $browser-medium-gutter;
+    }
+    @include grid-media($grid-browser-large){
+      @include grid-column(1, $grid-browser-large);
+      min-height: 22rem;
+      margin-top: $browser-large-gutter;
+    }
+    @include grid-media($grid-browser-xlarge){
+      @include grid-column(1, $grid-browser-xlarge);
+      min-height: 20rem;
+      margin-top: $browser-xlarge-gutter;
+    }
+
+    .post-background {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+
+      background-image: url('../images/post-bg.png');
+      background-size: cover;
+
+      transition: transform 0.2s ease;
+      transform: scale(1) translateZ(0);
+
+      overflow: hidden;
+    }
+
+    .post-content {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+
+      margin: 0;
+      padding: 1.8rem 1.6rem;
+
+      background: linear-gradient(to top, rgba(0,0,0, 0.1), rgba(0,0,0, 0.3));
+
+      overflow: hidden;
+      border-radius: $border-radius-default;
+
+      .post-title {
+        color: white;
+        text-shadow: 0 1px 3px rgba(0,0,0, 0.3);
+        transform: translateZ(0);
+      }
+
+      .post-date {
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: 0.8rem;
+        z-index: 3;
+        transform: translate(-50%, 0) translateZ(0);
+
+        font-family: $font-face-text;
+        font-weight: 700;
+        color: white;
+        opacity: 1;
+        text-shadow: 0 1px 3px rgba(0,0,0, 0.3);
+
+        transition: bottom 0.2s ease;
+      }
+
+      .post-tags {
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        bottom: -3.2rem;
+        transform: translate(-50%) translateZ(0);
+
+        background-color: white;
+        color: $gray;
+        border-radius: $border-radius-default;
+        padding: 0.6rem 0.8rem;
+
+        transition: bottom 0.2s ease;
+
+        p {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+        }
+      }
+    }
+
+    &:hover {
+      .post-date {
+        bottom: 4.2rem;
+      }
+      .post-tags {
+        bottom: 0.8rem;
+      }
+      .post-background {
+        transform: scale(1.05) translateZ(0);
+      }
+    }
+  }
+}
+
+.load-more {
+  display: block;
+  position: relative;
+  font-size: 2rem;
+  line-height: 44px;
+  height: 44px;
+
+  margin: 2.4rem auto 0;
+  padding: 0 2rem;
+
+  font-family: $font-face-headers;
+  background-color: $blue;
+  color: white;
+
+  border: none;
+  border-radius: $border-radius-default;
+}

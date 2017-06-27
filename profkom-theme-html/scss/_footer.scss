@@ -1,0 +1,138 @@
+@import "variables";
+
+//Footer styling
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  height: auto;
+  margin-top: 6.4rem;
+
+  background-color: $vapor;
+
+  .footer-item {
+    position: relative;
+    float: left;
+    clear: none;
+    width: 30%;
+    height: 16rem;
+
+    padding: 0 24px;
+
+    &:is(last-child) {
+      clear: both;
+    }
+
+    h3 {
+      text-align: center;
+      margin: 2.4rem 0 0.8rem;
+    }
+  }
+
+  .social-icons-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
+
+    .icon-link {
+      display: block !important;
+      width: 52px;
+      height: 52px;
+      margin-right: -52px;
+      margin-top: 1.4rem;
+      background-color: rgba(0,0,0,0.0);
+      z-index:1000;
+
+      -webkit-transition: transform 0.3s ease;
+      -moz-transition: transform 0.3s ease;
+      -o-transition: transform 0.3s ease;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &:hover + .icon-canvas {
+        transform: scale(1.1);
+
+        .icon {
+          fill: $blue;
+        }
+      }
+    }
+
+    .icon-canvas {
+      margin-top: 1.4rem;
+      margin-right: 1.0rem;
+      z-index: 0;
+
+      -webkit-transition: transform 0.3s ease;
+      -moz-transition: transform 0.3s ease;
+      -o-transition: transform 0.3s ease;
+      transition: transform 0.3s ease;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .icon {
+        fill: #CCC;
+
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  .contacts-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 1.4rem;
+    padding: 0;
+
+    .contact-item {
+      color: $gray-dark;
+      font-weight: 500;
+    }
+  }
+
+  hr {
+    position: relative;
+    float: left;
+    clear: none;
+    width: 0px;
+    margin: 0;
+    border: none;
+    border-right: 1px solid $gray-transparent;
+  }
+
+  .copyright {
+    position: relative;
+    background-color: white;
+    width: 100vw;
+    height: 4rem;
+
+    padding: 0;
+    margin: 0;
+
+    text-align: center;
+
+    p {
+      line-height: 4rem;
+      font-size: 1.2rem;
+      font-family: $font-face-text;
+    }
+  }
+}

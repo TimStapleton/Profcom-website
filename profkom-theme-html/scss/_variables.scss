@@ -1,0 +1,64 @@
+//Variables
+
+//$font-face-serif:   'Garamond', Times, "Times New Roman", serif;
+//$font-face-sans:    'Avenir Next', Helvetica, sans-serif;
+$font-face-headers: 'Rubik', sans-serif;
+$font-face-text:    'Avenir Next', Helvetica, sans-serif;
+
+
+$border-radius-default: 0.4rem;
+
+//Colors
+$gray-dark:  #222;
+$gray:       #6D6D6D;
+$gray-light: #B6B6B6;
+$vapor:      #F9F9F9;
+$blue:       #00ACDC;
+
+$gray-transparent: rgba(0,0,0, 0.1);
+
+//Menu
+$menu-height: 4.4rem;
+
+//Grid
+$browser-small:   "(min-width:  720px)";
+$browser-medium:  "(min-width:  960px)"; /* styles for browsers larger than 960px; */
+$browser-large:   "(min-width: 1440px)"; /* styles for browsers larger than 1440px; */
+$browser-xlarge:  "(min-width: 2000px)"; /* for sumo sized (mac) screens */
+$mobile-small:    "(max-device-width: 480px)"; /* styles for mobile browsers smaller than 480px; (iPhone) */
+$mobile-medium:   "(device-width: 768px)"; /* default iPad screens */
+$tablet-portrait:  "(min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)";
+$tablet-landscape: "(min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)";
+
+$neat-grid: (
+  columns: 12,
+  gutter: 0.6rem
+);
+
+$browser-small-gutter: 0.4rem;
+$grid-browser-small:  (
+  columns: 2,
+  gutter: $browser-small-gutter,
+  media: $browser-small
+);
+
+$browser-medium-gutter: 0.5rem;
+$grid-browser-medium:  (
+  columns: 3,
+  gutter: $browser-medium-gutter,
+  media: $browser-medium
+);
+
+$browser-large-gutter: 0.6rem;
+$grid-browser-large: (
+  columns: 4,
+  gutter: $browser-large-gutter,
+  media: $browser-large
+);
+
+$browser-xlarge-gutter: 0.8rem;
+$grid-browser-xlarge:  (
+  columns: 5,
+  gutter: $browser-xlarge-gutter,
+  media: $browser-xlarge
+);
