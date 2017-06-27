@@ -82,7 +82,7 @@ footer {
       }
 
       .icon {
-        fill: #CCC;
+        fill: $gray-light;
 
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
@@ -103,7 +103,7 @@ footer {
     padding: 0;
 
     .contact-item {
-      color: $gray-dark;
+      color: $gray;
       font-weight: 500;
     }
   }

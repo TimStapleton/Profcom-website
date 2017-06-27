@@ -38,18 +38,58 @@
     </ul>
   </nav>
 
+  <!--Offscreen-->
+  <button type="button" class="menu-button">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+
+  <nav class="sliding-panel-content">
+
+    <p class="menu-close-title">Меню</p>
+
+    <ul class="menu-offscreen">
+      <li><a href="#">Судентам</a></li>
+      <li><a href="#">Абитуриентам</a></li>
+      <li>
+        <a href="#" class="js-accordion-trigger">Выпадающий список</a>
+        <ul class="submenu">
+          <li><a href="#">Подпункт</a></li>
+          <li><a href="#">Еще подпункт</a></li>
+          <li><a href="#">И другой</a></li>
+          <li><a href="#">А потом еще один такой вот</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="js-accordion-trigger">Уляля</a>
+        <ul class="submenu">
+          <li><a href="#">Подпункт</a></li>
+          <li><a href="#">Еще подпункт</a></li>
+          <li><a href="#">И другой</a></li>
+          <li><a href="#">А потом еще один такой вот</a></li>
+        </ul>
+      </li>
+      <li><a href="#">И еще пункт</a></li>
+    </ul>
+
+  </nav>
+
+  <div class="sliding-panel-fade-screen"></div>
+
   <!--Header-->
   <header>
     <div class="cover">
       <img src="./images/profkom-logo.svg" alt="логотип профкома" class="logo">
+      <section class="head">
+        <h1 class="title">Профком</h1>
+        <p class="intro">
+          Дофига слов всяких для этого сайта профкома и пара слов о чем вообще и как пользоваться и зачем.
+          Для навигации по сайту выберите пункт меню и, если нужно, соответствующую подкатегорию ниже.
+        </p>
+      </section>
     </div>
-    <section class="head">
-      <h1 class="title">Профком</h1>
-      <p class="intro">
-        Дофига слов всяких для этого сайта профкома и пара слов о чем вообще и как пользоваться и зачем.<br/>
-        Для навигации по сайту выберите пункт меню и, если нужно, соответствующую подкатегорию ниже.
-      </p>
-    </section>
   </header>
 
   <!--Posts-->
@@ -73,6 +113,22 @@
     </a>
 
     <!--Copies-->
+    <div class="post">
+      <div class="post-background"></div>
+      <div class="post-content">
+        <h4 class="post-title">Post title</h4>
+        <h6 class="post-date">21.04.2017</h6>
+        <div class="post-tags">
+          <p>
+            <span class="hashtag">#</span>
+            <span class="tag">tag1</span>,
+            <span class="tag">tag2</span>,
+            <span class="tag">tag3</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
     <div class="post">
       <div class="post-background"></div>
       <div class="post-content">
@@ -299,6 +355,7 @@
 
   </footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src='./js/scripts.js'></script>
 
 </body>

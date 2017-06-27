@@ -44,7 +44,8 @@ gulp.task('styles', ['scss'],function(){
   .pipe(csso())
   .pipe(concat('app.css'))
   .pipe(uncss({
-    html: ['./*.html']
+    html: ['./*.html'],
+    ignore: [/is-visible/, /is-expanded/]
   }))
   .pipe(gulp.dest('./build/css/'))
   .pipe(connect.reload());

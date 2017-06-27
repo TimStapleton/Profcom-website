@@ -2,9 +2,13 @@
 
 //Menu styling
 .menu {
-  display: block;
+  display: none;
   position: relative;
   height: $menu-height;
+
+  @include grid-media($grid-browser-medium){
+    display: block;
+  }
 
   ul.menu-items {
     display: flex;
@@ -134,51 +138,106 @@
 }
 
 //Offscreen
-.sliding-panel-content {
-  $action-color: #477DBA !default;
-  $dark-gray: #333 !default;
-  $sliding-panel-border-color: $dark-gray;
-  $sliding-panel-background: lighten($sliding-panel-border-color, 5%);
-  $sliding-panel-color: #fff;
-  $sliding-panel-border: 1px solid $sliding-panel-border-color;
-  $sliding-panel-background-hover: $action-color;
-  $sliding-panel-color-hover: #fff;
-  $sliding-panel-background-focus: lighten($sliding-panel-background, 5%);
+$sliding-panel-width: 280px;
 
-  @include position(fixed, 0 auto 0 0);
-  @include size(220px 100%);
-  background: $sliding-panel-background;
+.menu-button {
+  display: block;
+  @include grid-media($grid-browser-medium){
+    display: none;
+  }
+
+  position: fixed;
+  left: 0.6rem;
+  top: 0.6rem;
+  width: 6rem;
+  height: 6rem;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: $blue;
+  border-radius: 0.4rem;
+
+  cursor: pointer;
+
+  z-index: 4000;
+
+  transition: transform 0.3s ease;
+
+  &.is-visible {
+    transform: translateX(calc(#{$sliding-panel-width} - 7rem));
+  }
+
+  span {
+    display: block;
+    position: absolute;
+    height: 0.5rem;
+    width: 4rem;
+    background: white;
+    border-radius: 0.5rem;
+    opacity: 1;
+    left: 1rem;
+    transition: transform 0.3s ease, opacity 0.3s ease, top 0.3s ease;
+    transform: rotate(0deg);
+
+    &:nth-child(1) {
+      top: 1rem;
+
+      &.is-visible {
+        top: 2.7rem;
+        transform: rotate(45deg);
+      }
+    }
+    &:nth-child(2) {
+      top: 2.7rem;
+
+      &.is-visible {
+        opacity: 0;
+        transform: translateX(-6rem);
+      }
+    }
+    &:nth-child(3) {
+      top: 4.4rem;
+
+      &.is-visible {
+        top: 2.7rem;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.sliding-panel-content {
+  display: block;
+  @include grid-media($grid-browser-medium){
+    display: none;
+  }
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  @include size($sliding-panel-width 100%);
+
+  transition: all 0.3s ease;
+  transform: translateX(- $sliding-panel-width);
+  background-color: $blue;
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
-  transform: translateX(-220px);
-  transition: all 0.25s linear;
-  z-index: 999999;
+  z-index: 3000;
+  color: white;
 
-  ul {
-    padding: 0;
+  p.menu-close-title {
     margin: 0;
-  }
+    padding: 1rem 1rem;
 
-  li {
-    list-style: none;
-  }
+    font-size: 2.6rem;
+    line-height: 6rem;
+    text-align: center;
+    color: white;
 
-  li a {
-    border-bottom: $sliding-panel-border;
-    color: $sliding-panel-color;
-    display: block;
-    font-weight: bold;
-    padding: 1em;
-    text-decoration: none;
-
-    &:focus {
-      background-color: $sliding-panel-background-focus;
-    }
-
-    &:hover {
-      background-color: $sliding-panel-background-hover;
-      color: $sliding-panel-color-hover;
-    }
+    cursor: pointer;
   }
 
   &.is-visible {
@@ -187,27 +246,71 @@
 }
 
 .sliding-panel-fade-screen {
-  @include position(fixed, 0);
-  background: black;
+  display: block;
+  @include grid-media($grid-browser-medium){
+    display: none;
+  }
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s ease;
+  background-color: #000;
   opacity: 0;
-  transition: all 0.2s ease-in-out;
   visibility: hidden;
-  z-index: 999998;
+  z-index: 2000;
 
   &.is-visible {
-    opacity: 0.4;
+    opacity: 0.6;
     visibility: visible;
   }
 }
 
-.sliding-panel-button {
-  cursor: pointer;
-  display: inline-block;
-  outline: none;
-  padding: 10px 16px;
-  position: relative;
+.menu-offscreen {
+  margin: 0;
+  background-color: $gray-transparent;
+  padding: 0;
+  list-style: none;
 
-  img {
-    height: 1.3em;
+  a {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0.4rem 1rem;
+
+    background-color: transparent;
+    color: rgba(255,255,255, 0.7);
+    font-weight: normal;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: rgba(255,255,255,0.2);
+      color: white;
+    }
+  }
+
+  ul.submenu {
+    display: none;
+    background-color: $gray-transparent;
+
+    padding: 0;
+    list-style: none;
+    color: white;
+
+    a {
+      padding-left: 2.4rem;
+    }
+  }
+
+  .is-expanded {
+    > a {
+      background-color: rgba(255,255,255,0.4);
+      color: white;
+    }
+
+    display: block;
   }
 }

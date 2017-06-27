@@ -2,9 +2,22 @@
 
 //Posts styling
 .posts {
-  margin-top: 1.6rem;
+  margin: 1.6rem auto 0;
 
   @include grid-container;
+
+  @include grid-media($grid-browser-small){
+    max-width: 720px;
+  }
+  @include grid-media($grid-browser-medium){
+    max-width: 960px;
+  }
+  @include grid-media($grid-browser-large){
+    max-width: 1280px;
+  }
+  @include grid-media($grid-browser-xlarge){
+    max-width: 1680px;
+  }
 
   .post {
     display: block;
@@ -107,7 +120,6 @@
         transform: translate(-50%) translateZ(0);
 
         background-color: white;
-        color: $gray;
         border-radius: $border-radius-default;
         padding: 0.6rem 0.8rem;
 
@@ -117,6 +129,9 @@
           display: flex;
           flex-flow: row nowrap;
           justify-content: center;
+
+          color: $gray-dark;
+          font-weight: 500;
         }
       }
     }

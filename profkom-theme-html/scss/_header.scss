@@ -7,13 +7,14 @@ header {
 
   .cover {
     width: 100vw;
-    height: 17rem;
+    height: auto;
     padding: 4.4rem;
 
-    background-image: url('../images/bg-1.png');
+    background: url('../images/cover-bg.jpg');
     background-size: cover;
-    background-position: center;
-    background-color: $gray-light;
+    background-position: bottom center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 
     .logo {
       display: block;
@@ -37,10 +38,15 @@ header {
 
     h1.title {
       margin-top: 2.4rem;
+      color: white;
       text-transform: uppercase;
     }
 
     p.intro {
+    max-width: 62rem;
+    position: relative;
+    margin: 0 auto;
+    color: white;
       margin-top: 0.6rem;
     }
   }
