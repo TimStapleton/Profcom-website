@@ -21,10 +21,11 @@ $gray-transparent: rgba(0,0,0, 0.1);
 $menu-height: 4.4rem;
 
 //Grid
-$browser-small:   "(min-width:  620px)";
-$browser-medium:  "(min-width:  960px)"; /* styles for browsers larger than 960px; */
+$browser-small:   "(min-width:  610px)";
+$browser-medium:  "(min-width:  990px)"; /* styles for browsers larger than 960px; */
 $browser-large:   "(min-width: 1440px)"; /* styles for browsers larger than 1440px; */
 $browser-xlarge:  "(min-width: 2000px)"; /* for sumo sized (mac) screens */
+
 $mobile-small:    "(max-device-width: 480px)"; /* styles for mobile browsers smaller than 480px; (iPhone) */
 $mobile-medium:   "(device-width: 768px)"; /* default iPad screens */
 $tablet-portrait:  "(min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)";
