@@ -1,0 +1,35 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "typography";
+@import "variables";
+@import "menu";
+@import "header";
+@import "posts";
+@import "footer";
+@import "publication";
+
+
+//Basic styling
+html {
+  padding: 0;
+  margin: 0;
+
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+  padding: 0;
+  margin: -1rem 0 0 0;
+
+  background: white;
+  font-family: $font-face-normal;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: $gray;
+
+  overflow-x: hidden;
+}
+
+div {display: block; box-sizing: border-box;}

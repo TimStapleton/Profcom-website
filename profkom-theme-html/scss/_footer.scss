@@ -1,0 +1,222 @@
+@import "variables";
+@import "typography";
+
+//Footer styling
+footer {
+
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  height: auto;
+  margin-top: 6.4rem;
+  padding-top: 2rem;
+
+  background-color: $vapor;
+  .footer-container {
+    display: block;
+    margin: 0 auto;
+
+    @include grid-container;
+
+    @include grid-media($grid-browser-small){
+      max-width: 780px;
+    }
+    @include grid-media($grid-browser-medium){
+      max-width: 1080px;
+    }
+    @include grid-media($grid-browser-large){
+      max-width: 1280px;
+    }
+    @include grid-media($grid-browser-xlarge){
+      max-width: 1680px;
+    }
+  }
+  .footer-item {
+    min-height: 12rem;
+    height: auto;
+    padding: 0 24px;
+    margin-bottom: 2rem;
+
+    @include grid-column(12);
+
+    @include grid-media($grid-browser-small){
+      @include grid-column(2, $grid-browser-small);
+    }
+    @include grid-media($grid-browser-medium){
+      @include grid-column(1, $grid-browser-medium);
+      min-height: 16rem;
+    }
+
+    &:is(last-child) {
+      clear: both;
+    }
+
+    h3 {
+      @extend .header-bold;
+      color: $gray;
+      text-align: center;
+      margin: 2.4rem 0 0.8rem;
+    }
+
+    &.about {
+      @include grid-media($grid-browser-small){
+        @include grid-column(2, $grid-browser-small);
+      }
+      @include grid-media($grid-browser-medium){
+        @include grid-column(1, $grid-browser-medium);
+      }
+    }
+    &.social {
+      @include grid-media($grid-browser-small){
+        @include grid-column(1, $grid-browser-small);
+      }
+      @include grid-media($grid-browser-medium){
+        @include grid-column(1, $grid-browser-medium);
+      }
+    }
+    &.contacts {
+      @include grid-media($grid-browser-small){
+        @include grid-column(1, $grid-browser-small);
+      }
+      @include grid-media($grid-browser-medium){
+        @include grid-column(1, $grid-browser-medium);
+      }
+    }
+  }
+
+  h5 {
+    color: $gray-light;
+  }
+
+  .text-about {
+    display: block;
+    margin: 1rem auto 0;
+    max-width: 60rem;
+  }
+
+  .social-icons-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
+
+    .icon-link {
+      display: block !important;
+      width: 52px;
+      height: 52px;
+      margin-right: -52px;
+      margin-top: 1.4rem;
+      background-color: rgba(0,0,0,0.0);
+      z-index:1000;
+
+      -webkit-transition: transform 0.3s ease;
+      -moz-transition: transform 0.3s ease;
+      -o-transition: transform 0.3s ease;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &:hover + .icon-canvas {
+        transform: scale(1.1);
+
+        .icon {
+          fill: $blue;
+        }
+      }
+    }
+
+    .icon-canvas {
+      margin-top: 1.4rem;
+      margin-right: 1.0rem;
+      z-index: 0;
+
+      -webkit-transition: transform 0.3s ease;
+      -moz-transition: transform 0.3s ease;
+      -o-transition: transform 0.3s ease;
+      transition: transform 0.3s ease;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .icon {
+        fill: $gray-light;
+
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  .contacts-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 2.4rem;
+    padding: 0;
+
+    .contact-item {
+      color: $gray;
+      font-weight: 500;
+    }
+  }
+
+  hr {
+    position: relative;
+    float: left;
+    clear: none;
+    width: 96%;
+    height: 0.1rem;
+    margin: 0 2%;
+    border: none;
+    border-bottom: 1px solid $gray-transparent;
+
+    @include grid-media($grid-browser-small){
+      &.hidden-small {
+        display: none;
+      }
+    }
+
+    @include grid-media($grid-browser-medium){
+      width: 0.1rem;
+      height: 12rem;
+      border-bottom: none;
+      border-right:  1px solid $gray-transparent;
+      margin: 2rem 0 0;
+
+      &.hidden-small {
+        display: block !important;
+      }
+    }
+  }
+
+  .copyright {
+    position: relative;
+    background-color: white;
+    width: 100vw;
+    height: 4rem;
+
+    padding: 0;
+    margin: 0;
+
+    text-align: center;
+
+    h6 {
+      color: $gray-light;
+      line-height: 4rem;
+    }
+  }
+}
